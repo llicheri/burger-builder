@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { withRouter } from "react-router-dom";
 
 import classes from "./Burger.module.css";
 import BurgerIngredient from "./BurgerIngredient/BurgerIngredient";
@@ -30,4 +31,4 @@ Burger.propTypes = {
   ingredients: PropTypes.object
 };
 
-export default Burger;
+export default withRouter(Burger);
